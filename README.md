@@ -18,12 +18,7 @@ Companion R package for:
 | `X_rand()` | Predictor simulator: block-exchangeable (Setting 5), autoregressive (Settings 3-4), and a new spiked-eigenvalue option (Settings 1-2). | Section 3.1 |
 | `normalize_vector()`, `normalize_matrix()` | Utility helpers. | — |
 
-Unlike `nctsir` (the companion package for your other paper, where the
-paper explicitly disclaims variable selection), this paper's whole point is
-variable selection, and it reports TPR/FPR/FDR throughout Tables 1-6 — so
-those three are included here as first-class, paper-verified metrics
-(`FNR`/`TNR` are not reported anywhere in this paper, so they're left out,
-same "only ship what's actually used" rule as before).
+ 
 
 ## Verified against the paper
 
