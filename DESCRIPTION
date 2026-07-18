@@ -1,0 +1,32 @@
+Package: sirwls
+Type: Package
+Title: Sliced Inverse Regression via Weighted Leverage Score (SIR-WLS)
+Version: 0.1.0
+Authors@R: c(
+    person("Nadia", "Asrir", email = "n.asrir@ump.ac.ma", role = c("aut", "cre")),
+    person("Abdallah", "Mkhadri", role = "aut"))
+Description: Implements SIR-WLS, the sliced inverse regression via weighted
+    leverage score estimator of Asrir and Mkhadri (2025)
+    <doi:10.1080/00949655.2025.2550340>: a model-free weighted leverage
+    score (Zhong et al. 2012) screens predictors from the singular value
+    decomposition of the design matrix, classical sliced inverse regression
+    is then applied to the screened subset, and the resulting direction is
+    extended with zeros for the unselected predictors. Also provides a plain
+    Lasso baseline, the proximity criterion and variable-selection accuracy
+    metrics (TPR, FPR, FDR) used in the paper's empirical study, and a
+    correlated-Gaussian data simulator matching its simulation design.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5)
+Imports:
+    dr,
+    Rdimtools,
+    glmnet,
+    mvtnorm
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3

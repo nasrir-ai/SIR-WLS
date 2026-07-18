@@ -1,0 +1,20 @@
+citHeader("To cite sirwls / the SIR-WLS method in publications, please use:")
+
+bibentry(
+  bibtype  = "Article",
+  title    = "A weighted leverage score approach versus Lasso sliced inverse regression: a comparative study",
+  author   = c(
+    person("Nadia", "Asrir"),
+    person("Abdallah", "Mkhadri")
+  ),
+  journal  = "Journal of Statistical Computation and Simulation",
+  year     = "2025",
+  doi      = "10.1080/00949655.2025.2550340",
+  url      = "https://doi.org/10.1080/00949655.2025.2550340",
+  textVersion = paste(
+    "Asrir, N. and Mkhadri, A. (2025).",
+    "A weighted leverage score approach versus Lasso sliced inverse regression: a comparative study.",
+    "Journal of Statistical Computation and Simulation.",
+    "doi:10.1080/00949655.2025.2550340"
+  )
+)
