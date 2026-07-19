@@ -6,12 +6,15 @@
 #' study", *Journal of Statistical Computation and Simulation*,
 #' \doi{10.1080/00949655.2025.2550340}.
 #'
-#' Provides the SIR-WLS estimator ([wls.sir()], Algorithm 2 of the paper), a
-#' plain Lasso baseline ([lasso_fit()]), the proximity criterion
-#' ([costeta()]) and variable-selection accuracy metrics ([TPR.funct()],
-#' [FPR.funct()], [FDR.funct()]) used throughout the paper's empirical
-#' study, and a correlated Gaussian predictor simulator matching its five
-#' simulation settings ([X_rand()], Section 3.1).
+#' Provides the SIR-WLS estimator ([wls.sir()], Algorithm 2 of the paper),
+#' the paper's two comparison baselines under a common calling convention
+#' — plain Lasso ([lasso_fit()]) and Lasso-SIR ([lassosir_fit()], a thin
+#' wrapper around the external \pkg{LassoSIR} package rather than a
+#' reimplementation) — the proximity criterion ([costeta()]) and
+#' variable-selection accuracy metrics ([TPR.funct()], [FPR.funct()],
+#' [FDR.funct()]) used throughout the paper's empirical study, and a
+#' correlated Gaussian predictor simulator matching its five simulation
+#' settings ([X_rand()], Section 3.1).
 #'
 #' @section Where these functions came from:
 #' This package was assembled from the same personal working file
